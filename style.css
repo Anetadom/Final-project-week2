@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    padding: 32px;
+    /* display: flex;
+    margin: 0 auto; */
+}
+
+nav {
+    height: 44px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    height: calc(100vh - 76px);
+}
+
+h1 {
+    color: #1a202c;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #243e63;
+    font-weight: 900;
+    font-size: 24 px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 24px;
+    padding-bottom: 4px;
+    list-style-type: none;
+}
+
+button {
+    font-size: 14 px;
+    font-weight: 600;
+    background-color: #6415ff;
+    color: white;
+    padding: 12px 32px;
+    border: 0px;
+    border-radius: 9999px;
+}
+
+.text--purple{
+    color: #6415FF;
+}
+
+.container {
+    padding: 92px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* HEADER */
+
+.nav__container {}
+
+.nav__img {
+    width: 40px;
+    margin-right: 12px;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__link--margin-left {
+    margin-left: 24px;
+}
+
+/* 
+MAIN
+ */
+
+.main__content {
+    width: 40%;
+    position: relative;
+}
+
+.main__img--wrapper {
+    width: 60%;
+    padding-left: 24px;
+}
+
+.main__img {
+    width: 100%;
+}
+
+.section__para {
+    color: #243e24;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 32px 0;
+}
+
+.main__btn--wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.main__input {
+    width: 100%;
+    padding: 16px 32px;
+    border: solid #e7eaf1 2px;
+    border-radius: 9999px;
+}
+
+::placeholder {
+    color: #e7eaf1
+}
+
+.main__btn {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.main__customer {
+    position: absolute;
+    bottom: 0;
+    margin-top: 80px;
+}
+
+.main__customer--description {
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+.main__customer--img {
+    width: 100%;
+    padding: 0 64px 0 0;
+    margin-top: 16px;
+}
