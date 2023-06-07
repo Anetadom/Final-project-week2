@@ -24,7 +24,7 @@ nav {
 }
 
 
-}
+
 
 h1 {
     color: #1a202c;
@@ -56,7 +56,7 @@ li {
     list-style-type: none;
 }
 
-button {
+.button {
     font-size: 16px;
     font-weight: 600;
     background-color: #6415ff;
@@ -371,7 +371,7 @@ VALUE
     width: 100%;
 }
 
-.values__column{
+.values__column {
     margin: 32px 32px 0 0;
 }
 
@@ -391,7 +391,7 @@ VALUE
     color: #9ae6b4;
 }
 
-.values__column--img-wrapper{
+.values__column--img-wrapper {
     padding: 8px;
     border-radius: 50%;
     display: flex;
@@ -407,17 +407,130 @@ VALUE
     background-color: #feb2b2;
 }
 
-.values__name{
+.values__name {
     color: #243e63;
     font-size: 20px;
     margin-left: 12px;
     font-weight: 700;
 }
 
-.values__column--para{
+.values__column--para {
     color: #718096;
     font-size: 16px;
     line-height: 1.625;
     margin-top: 16px;
-
 }
+
+
+/* 
+PLANS 
+*/
+
+.plans {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.plan {
+    background-color: #ffffff;
+    position: relative;
+    width: calc(100% / 3);
+    margin: 64px 32px 0 0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.plan__head--wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 0;
+    border: solid 1px rgb(226, 232, 240);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+
+.plan__head {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    top: 0;
+    left: 0;
+}
+
+.plan__head--green {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__head--red {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.plan__price {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 4px 0;
+    padding: 18px 0;
+}
+
+.plan__duration {
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+}
+
+.plan__features--wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 32px;
+    border: solid 1px rgb(226, 232, 240);
+}
+
+.plan__features--title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.025rem;
+    line-height: 1.7;
+}
+
+.plan__features {
+    font-size: 16px;
+    margin-top: 20px;
+    opacity: 0.7;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.plan__button--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgb(226, 232, 240);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 32px;
+}
+
+    .plan__button{
+        font-size: 14px;
+        padding: 16px 32px;
+        border-radius: 9999px;
+        border: none;
+        letter-spacing: 0.05em;
+    }
+
+    .plan__button--green{
+        color:white;
+        background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%)
+    }
