@@ -19,14 +19,13 @@ body {
 
 
 nav {
-    height: 44px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px;
+    padding: 32px 32px 0 32px;
 }
 
 
@@ -133,14 +132,19 @@ li {
     justify-content: center;
 }
 
-.nav__link--margin-left {
-    margin: 0 24px 0 48px;
-    color: rgb(61, 60, 60);
-}
 
 .nav__link {
     margin: 0 24px;
     color: rgb(61, 60, 60);
+    transition: all 300ms ease;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav__link:hover{
+    color: rgb(100 21 255);
+    border-bottom: 2px solid rgb(100 21 255);
+    opacity: 1;
 }
 
 .nav__link--primary {
@@ -151,6 +155,26 @@ li {
     padding: 12px 32px;
     border: 0px;
     border-radius: 9999px;
+    transition: all 300ms ease;
+}
+
+.nav__link--primary:hover{
+    background-color: #5011CC;
+    color: #edf2f7;
+}
+
+.nav__link--margin-left {
+    margin: 0 24px 0 48px;
+    padding-bottom: 4px;
+    color: rgb(61, 60, 60);
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease;
+}
+
+.nav__link--margin-left:hover{
+    color: rgb(100 21 255);
+    border-bottom: 2px solid rgb(100 21 255);
+    opacity: 1;
 }
 
 
@@ -207,6 +231,11 @@ header
     border-radius: 9999px;
 }
 
+.main__input:focus {
+    outline: none !important;
+    border-color: #6415FF;
+}
+
 ::placeholder {
     font-size: 16px;
     color: #e7eaf1
@@ -216,6 +245,11 @@ header
     position: absolute;
     right: 8px;
     top: 8px;
+    transition: all 300ms ease;
+}
+
+.main__btn:hover{
+    background-color: rgb(60 13 153);
 }
 
 .main__customer {
@@ -304,6 +338,11 @@ QUALITY
 
 .quality__button {
     margin-top: 32px;
+    transition: all 300ms ease;
+}
+
+.quality__button:hover{
+    background-color: rgb(60 13 153);
 }
 
 .quality__img--wrapper {
@@ -548,11 +587,19 @@ PLANS
         border: none;
         letter-spacing: 0.05em;
         font-weight: 700;
+        transition: all 300ms ease;
+    }
+
+    .plan__button:hover{
+        transform: translateY(-1px) translateX(1px);
+        box-shadow:0 20px 25px -5px rgba(0,0,0,0.1);
+        filter: grayscale(0.08);
     }
 
     .plan__button--green{
         color:white;
         background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%)
+
     }
 
     .plan__button--red{
@@ -649,10 +696,14 @@ PLANS
     .testimonials__buttons{
         display: flex;
         flex-direction: row;
+        /* margin: 0 auto; */
+
     }
     
     .testimonials__button--img{
-        font-size: 16px;
+        display: flex;
+        width: 16px;
+        height: 16px;
         color:#6415ff
     }
 
@@ -775,12 +826,26 @@ PLANS
         background:#f56565 ;
         border: none;
         margin-right: 32px;
+        transition: all 300ms ease;
     }
+
+    .getstarted__button--orange:hover{
+        background-color: rgb(229 62 62);
+        color:rgb(237 242 247) ;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05) ;
+    }    
     
     .getstarted__button--purple{
         background-color: transparent;
         border: 1px solid rgb(160 174 192);
+        transition: all 300ms ease;
     }
+    .getstarted__button--purple:hover{
+        background-color: rgb(247 250 252);
+        color: rgb(100 21 255) ;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05) ;
+    }    
+
 
     /* 
     FOOTER
@@ -821,7 +886,13 @@ PLANS
         color: #f7fafc;
         font-size: 14px;
         font-weight: 400;
-       
+        padding-bottom: 2px;
+        border-bottom: 2px solid transparent;
+        transition: all 300ms ease;
+    }
+
+    .footer__link:hover{
+        border-color: #f7fafc;
     }
 
     .footer__link--wrapper{
@@ -879,4 +950,9 @@ PLANS
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 300ms ease;
+    }
+
+    .footer__icon:hover{
+        background-color: rgb(203 213 224);
     }
