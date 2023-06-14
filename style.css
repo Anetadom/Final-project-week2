@@ -1117,6 +1117,10 @@ PLANS
             margin-top: 48px;
         }
 
+        .main__img{
+         padding: 0;
+        }
+
         .section__description{
             font-size: 16px;
         }
