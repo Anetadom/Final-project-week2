@@ -264,7 +264,7 @@ header
  */
 
 .container__header--wrapper {
-    height: calc(100vh - 180px);
+    height: auto
 }
 
 
@@ -946,6 +946,7 @@ PLANS
      */
 
      footer{
+        position: relative;
         background-color: #6415ff;
         padding: 64px 32px;
      }
@@ -1052,6 +1053,16 @@ PLANS
 
     .footer__icon:hover{
         background-color: rgb(203 213 224);
+    }
+
+    .decoration{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 20rem;
+    width: 20rem;
+    color: rgb(80 17 204);
+    opacity: 0.5;
     }
 
 
@@ -1236,6 +1247,10 @@ PLANS
 
     .footer__copyrights{
         margin: 32px 0;
+    }
+
+    .question__name{
+        font-size: 14px;
     }
 }
 
